@@ -1,0 +1,13 @@
+anifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: e4 Contacts Renderer
+Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.renderer
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Kai Tödter
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.e4.ui.workbench.renderers.swt;bundle-version="0.9.1",
+ org.eclipse.e4.ui.workbench.swt;bundle-version="0.9.1",
+ org.eclipse.e4.ui.model.workbench;bundle-version="0.9.1",
+ org.eclipse.swt;bundle-version="3.6.0",
+ org.eclipse.e4.core.contexts;bundle-version="0.9.0",
+ org.eclipse.jface;bundle-version="3.6.0"

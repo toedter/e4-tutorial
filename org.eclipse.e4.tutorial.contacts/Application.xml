@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ASCII"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmi:id="_PXE0EJ-qEd-iBNJWVQ-d9Q" elementId="org.e4-tutorial.contacts.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_eB6zsJ-xEd-iBNJWVQ-d9Q" label="e4 Contacts" width="800" height="600"/>
+</application:Application>

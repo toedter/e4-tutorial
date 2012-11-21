@@ -1,0 +1,23 @@
+#LoginDialog {
+	background-color: radial #f6f8fc #dee3f3 60%;
+}
+
+Composite {
+	background-color: #dee3f3;
+}
+
+Label {
+	font: Verdana 8px;
+	color: #043144;
+}
+
+Button {
+	font: Verdana 8px;
+	background-color: #dee3f3;
+}
+
+Text {
+	color: #043144;
+	font: Verdana 8px;
+	background-color: #dee3f3;
+}

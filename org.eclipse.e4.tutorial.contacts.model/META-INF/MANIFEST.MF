@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: e4 Contacts Model
+Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.model
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Kai Tödter
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.core.databinding.observable.list
+Export-Package: org.eclipse.e4.tutorial.contacts.model

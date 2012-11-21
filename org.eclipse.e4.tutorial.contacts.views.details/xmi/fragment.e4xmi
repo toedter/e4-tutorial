@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmi:id="_glJTgHijEd-QLpUkCzu7EA">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="188321c0-f6a1-4502-8073-f8d9c746dfd8" featurename="children" parentElementId="org.eclipse.e4.tutorial.contacts.partstacks.second">
+    <elements xsi:type="basic:Part" xmi:id="89a10afd-b11c-497e-b89f-956997b74293" elementId="DetailsView" contributionURI="bundleclass://org.eclipse.e4.tutorial.contacts.views.details/org.eclipse.e4.tutorial.contacts.views.details.DetailsView" label="Details"/>
+  </fragments>
+</fragment:ModelFragments>

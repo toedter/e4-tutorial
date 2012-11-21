@@ -1,3 +1,7 @@
+# Eclipse default classes output
+*/bin/
+
+
 *.class
 
 # Package Files #

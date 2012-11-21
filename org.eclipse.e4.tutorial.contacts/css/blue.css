@@ -1,0 +1,56 @@
+/*******************************************************************************
+ * Copyright (c) 2009, 2012 Kai Tödter and others.
+ * 
+ * All rights reserved. This program and the accompanying materials 
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html.
+ * 
+ * Contributors:
+ *     Kai Tödter - initial implementation
+ ******************************************************************************/
+
+.MTrimmedWindow.topLevel { 
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.MPartStack {
+    swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
+    swt-unselected-tabs-color: radial #f6f8fc #dee3f3 60%;
+    swt-outer-keyline-color: #FFFFFF;
+	swt-inner-keyline-color: #FFFFFF;
+	padding: 0px 7px 7px;
+	swt-tab-outline: #B6BCCC;
+	swt-shadow-visible: true;
+	swt-mru-visible: false;
+}
+
+.MTrimmedWindow { 
+    background-color: #E1E6F6; 
+}
+
+.MPartStack.active {
+	swt-tab-outline: #B6BCCC;
+	swt-unselected-tabs-color: radial #d4dbee #dee3f3 60%;
+	swt-outer-keyline-color: #B6BCCC;
+}
+
+Shell {
+	font: Verdana 8px;
+}
+
+CTabFolder.MArea .MPartStack, CTabFolder.MArea .MPartStack.active {
+   swt-shadow-visible: false;
+}
+
+#DetailsView {
+	background-color: radial #f6f8fc #dee3f3 60%;
+}
+
+Table {
+	background-color: radial #f6f8fc #dee3f3 60%;
+}
+

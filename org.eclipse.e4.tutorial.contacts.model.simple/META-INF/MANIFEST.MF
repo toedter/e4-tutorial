@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Simple e4 Contacs Model
+Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.model.simple
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Kai Tödter
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: org.eclipse.core.databinding.observable.list,
+ org.eclipse.e4.tutorial.contacts.model,
+ org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/contactsrepository.xml

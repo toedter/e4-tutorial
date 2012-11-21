@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.e4.ui.workbench.swt.E4Application"
+            name="e4 Contacts">
+         <property
+               name="appName"
+               value="e4 Contacts">
+         </property>
+         <property
+               name="applicationXMI"
+               value="org.eclipse.e4.tutorial.contacts/Application.e4xmi">
+         </property>
+         <property
+               name="cssTheme"
+               value="org.eclipse.e4.tutorial.contacts.themes.blue">
+         </property>
+         <property
+               name="rendererFactoryUri"
+               value="bundleclass://org.eclipse.e4.tutorial.contacts.renderer/org.eclipse.e4.tutorial.contacts.renderer.RendererFactory">
+         </property>
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://org.eclipse.e4.tutorial.contacts.login/org.eclipse.e4.tutorial.contacts.login.Login">
+         </property>       
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.e4.ui.css.swt.theme">
+      <theme
+            basestylesheeturi="css/blue.css"
+            id="org.eclipse.e4.tutorial.contacts.themes.blue"
+            label="Blue Theme">
+      </theme>
+   </extension>
+</plugin>
