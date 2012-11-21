@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<version>1.0.0-SNAPSHOT</version>
+	<artifactId>org.eclipse.e4.tutorial.contacts.product</artifactId>
+	<packaging>eclipse-repository</packaging>
+
+  <parent>
+    <relativePath>../org.eclipse.e4.tutorial.contacts.build.tycho/pom.xml</relativePath>
+    <groupId>org.eclipse.e4.tutorial.contacts</groupId>
+    <artifactId>org.eclipse.e4.tutorial.contacts.build.tycho</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-publisher-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<configuration>
+					<publishArtifacts>true</publishArtifacts>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-p2-director-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>materialize-products</id>
+						<goals>
+							<goal>materialize-products</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>archive-products</id>
+						<goals>
+							<goal>archive-products</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<products>
+						<product>
+							<id>e4-tutorial</id>
+						</product>
+					</products>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<groupId>org.eclipse.e4.tutorial.contacts</groupId>
+</project>

@@ -1,6 +1,9 @@
 # Eclipse default classes output
 */bin/
 
+# Maven target
+*/target/
+
 
 *.class
 
