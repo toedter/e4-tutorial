@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <relativePath>../org.eclipse.e4.tutorial.contacts.build.tycho/pom.xml</relativePath>
+    <groupId>org.eclipse.e4.tutorial.contacts</groupId>
+    <artifactId>org.eclipse.e4.tutorial.contacts.build.tycho</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>org.eclipse.e4.tutorial.contacts.feature</artifactId>
+  <packaging>eclipse-feature</packaging>
+  <groupId>org.eclipse.e4.tutorial.contacts</groupId>
+</project> 
