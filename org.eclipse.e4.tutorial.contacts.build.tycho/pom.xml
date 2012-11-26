@@ -19,6 +19,7 @@
 		<module>../org.eclipse.e4.tutorial.contacts.model.simple</module>
 		<module>../org.eclipse.e4.tutorial.contacts.renderer</module>
 		<module>../org.eclipse.e4.tutorial.contacts.views.details</module>
+		<module>../org.eclipse.e4.tutorial.contacts.model.application</module>
 	</modules>
 
 	<repositories>
@@ -53,6 +54,21 @@
 							<os>linux</os>
 							<ws>gtk</ws>
 							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86</arch>
+						</environment>
+						<environment>
+							<os>macosx</os>
+							<ws>cocoa</ws>
+							<arch>x86_64</arch>
 						</environment>
 					</environments>
 				</configuration>

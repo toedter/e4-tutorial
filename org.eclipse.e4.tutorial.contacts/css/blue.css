@@ -17,7 +17,7 @@
     margin-right: 2px;
 }
 
-.MPartStack {
+.MPartStack, .MTutorialPartStack {
     swt-tab-renderer: url('bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.CTabRendering');
     swt-unselected-tabs-color: radial #f6f8fc #dee3f3 60%;
     swt-outer-keyline-color: #FFFFFF;

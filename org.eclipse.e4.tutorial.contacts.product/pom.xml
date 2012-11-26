@@ -43,13 +43,6 @@
 						</goals>
 					</execution>
 				</executions>
-				<configuration>
-					<products>
-						<product>
-							<id>e4-tutorial</id>
-						</product>
-					</products>
-				</configuration>
 			</plugin>
 		</plugins>
 	</build>

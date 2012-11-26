@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://www.toedter.com/e4/tutorial/contacts/model/application"
+            class="org.eclipse.e4.tutorial.contacts.model.application.ui.basic.BasicPackage"
+            genModel="model/extension.genmodel"/>
+   </extension>
+
+</plugin>
