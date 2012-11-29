@@ -18,7 +18,6 @@ import java.net.URL;
 
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.jface.dialogs.Dialog;
-import org.eclipse.jface.dialogs.IDialogConstants;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.graphics.Image;
@@ -29,6 +28,7 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Monitor;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
@@ -66,7 +66,13 @@ public class LoginDialog extends Dialog {
 		Composite control = createContentArea(parent);
 		control.setData("org.eclipse.e4.ui.css.id", "LoginDialog");
 		Rectangle controlRect = control.getBounds();
-		Rectangle displayBounds = shell.getDisplay().getBounds();
+		
+		// looks strange in multi monitor environments
+		// Rectangle displayBounds = shell.getDisplay().getBounds();
+		
+		Monitor primary = shell.getDisplay().getPrimaryMonitor();
+	    Rectangle displayBounds = primary.getBounds();
+	    
 		int x = (displayBounds.width - controlRect.width) / 2;
 		int y = (displayBounds.height - controlRect.height) / 2;
 		shell.setBounds(x, y, controlRect.width, controlRect.height);
