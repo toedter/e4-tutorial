@@ -1,50 +1,32 @@
 <?xml version="1.0" encoding="ASCII"?>
-<application:Application xmi:version="2.0"
-	xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:extension="http://www.toedter.com/e4/tutorial/contacts/model/application"
-	xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application"
-	xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic"
-	xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu"
-	xmi:id="_PXE0EJ-qEd-iBNJWVQ-d9Q" elementId="org.e4-tutorial.contacts.application">
-	<children xsi:type="basic:TrimmedWindow" xmi:id="_eB6zsJ-xEd-iBNJWVQ-d9Q"
-		label="e4 Contacts" width="800" height="600">
-		<children xsi:type="basic:PartSashContainer" xmi:id="_1MKGkKEuEd-_leu7jlhuYQ"
-			horizontal="true">
-			<children xsi:type="extension:TutorialPartStack" xmi:id="_BCv6EKEvEdx-_leu7jlhuYQ"
-				elementId="tutorialPartStack">
-				<children xsi:type="basic:Part" xmi:id="_HiX24KCVEd-_leu7jlhuYQ"
-					contributionURI="bundleclass://org.eclipse.e4.tutorial.contacts/org.eclipse.e4.tutorial.contacts.views.ListView"
-					label="List View" />
-			</children>
-			<children xsi:type="basic:PartStack" xmi:id="_BCv6EKEvEd-_leu7jlhuYQ"
-				elementId="org.eclipse.e4.tutorial.contacts.partstacks.second" />
-		</children>
-		<mainMenu xmi:id="_-i8VMKB9Ed-_leu7jlhuYQ">
-			<children xsi:type="menu:Menu" xmi:id="_SR8kgKCAEd-_leu7jlhuYQ"
-				label="File">
-				<children xsi:type="menu:DirectMenuItem" xmi:id="_rC19MKB-Ed-_leu7jlhuYQ"
-					label="Exit (Direct)"
-					contributionURI="bundleclass://org.eclipse.e4.tutorial.contacts/org.eclipse.e4.tutorial.contacts.handlers.ExitHandler" />
-				<children xsi:type="menu:HandledMenuItem" xmi:id="_wrm_sKCCEd-_leu7jlhuYQ"
-					command="_CGO48KCCEd-_leu7jlhuYQ" />
-			</children>
-		</mainMenu>
-	</children>
-	<handlers xmi:id="_YXHhEKCCEd-_leu7jlhuYQ"
-		contributionURI="bundleclass://org.eclipse.e4.tutorial.contacts/org.eclipse.e4.tutorial.contacts.handlers.ExitHandler"
-		command="_CGO48KCCEd-_leu7jlhuYQ" />
-	<commands xmi:id="_CGO48KCCEd-_leu7jlhuYQ" elementId="contacts.exit"
-		commandName="Exit (Command)" />
-	<addons xmi:id="_XGB3wPZlEd-XstlTZ6nTXg" elementId="org.eclipse.e4.core.commands.service"
-		contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon" />
-	<addons xmi:id="_XGB3wPZlEd-XstlTZ6nTXh" elementId="org.eclipse.e4.ui.contexts.service"
-		contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon" />
-	<addons xmi:id="_XGB3wPZlEd-XstlTZ6nTXi" elementId="org.eclipse.e4.ui.bindings.service"
-		contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon" />
-	<addons xmi:id="_LK0NgPZmEd-XstlTZ6nTXj" elementId="org.eclipse.e4.ui.workbench.commands.model"
-		contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon" />
-	<addons xmi:id="_LK0NgPZmEd-XstlTZ6nTXk" elementId="org.eclipse.e4.ui.workbench.contexts.model"
-		contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon" />
-	<addons xmi:id="_LK0NgPZmEd-XstlTZ6nTXl" elementId="org.eclipse.e4.ui.workbench.bindings.model"
-		contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon" />
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmlns:extension="http://www.toedter.com/e4/tutorial/contacts/model/application" xmi:id="_PXE0EJ-qEd-iBNJWVQ-d9Q" elementId="org.e4-tutorial.contacts.application">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_eB6zsJ-xEd-iBNJWVQ-d9Q" label="e4 Contacts" width="800" height="600">
+    <children xsi:type="basic:PartSashContainer" xmi:id="_1MKGkKEuEd-_leu7jlhuYQ" horizontal="true">
+      <children xsi:type="extension:TutorialPartStack" xmi:id="_BCv6EKEvEdx-_leu7jlhuYQ" elementId="tutorialPartStack">
+        <children xsi:type="basic:Part" xmi:id="_HiX24KCVEd-_leu7jlhuYQ" contributionURI="bundleclass://org.eclipse.e4.tutorial.contacts/org.eclipse.e4.tutorial.contacts.views.ListView" label="List View"/>
+      </children>
+      <children xsi:type="basic:PartStack" xmi:id="_BCv6EKEvEd-_leu7jlhuYQ" elementId="org.eclipse.e4.tutorial.contacts.partstacks.second"/>
+    </children>
+    <mainMenu xmi:id="_-i8VMKB9Ed-_leu7jlhuYQ">
+      <children xsi:type="menu:Menu" xmi:id="_SR8kgKCAEd-_leu7jlhuYQ" label="File">
+        <children xsi:type="menu:DirectMenuItem" xmi:id="_rC19MKB-Ed-_leu7jlhuYQ" label="Exit (Direct)" contributionURI="bundleclass://org.eclipse.e4.tutorial.contacts/org.eclipse.e4.tutorial.contacts.handlers.ExitHandler"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_wrm_sKCCEd-_leu7jlhuYQ" command="_CGO48KCCEd-_leu7jlhuYQ"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_YXHhEKCCEd-_leu7jlhuYQ" contributionURI="bundleclass://org.eclipse.e4.tutorial.contacts/org.eclipse.e4.tutorial.contacts.handlers.ExitHandler" command="_CGO48KCCEd-_leu7jlhuYQ"/>
+  <bindingTables xmi:id="_97nt4DurEeKTRMGNbZubeQ" elementId="org.eclipse.e4.tutorial.contacts.bindingtable.0" bindingContext="_WgEJgDurEeKTRMGNbZubeQ">
+    <bindings xmi:id="_AFPFwDusEeKTRMGNbZubeQ" elementId="org.eclipse.e4.tutorial.contacts.keybinding.0" keySequence="CTRL+E" command="_CGO48KCCEd-_leu7jlhuYQ"/>
+  </bindingTables>
+  <rootContext xmi:id="_WgEJgDurEeKTRMGNbZubeQ" elementId="org.eclipse.ui.contexts.dialogAndWindow " name="Dialog &amp; Windows">
+    <children xmi:id="_XyMfwDurEeKTRMGNbZubeQ" elementId="org.eclipse.ui.contexts.window" name="Windows"/>
+    <children xmi:id="_5NULsDurEeKTRMGNbZubeQ" elementId="org.eclipse.ui.contexts.dialog" name="Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_CGO48KCCEd-_leu7jlhuYQ" elementId="contacts.exit" commandName="Exit (Command)"/>
+  <addons xmi:id="_XGB3wPZlEd-XstlTZ6nTXg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_XGB3wPZlEd-XstlTZ6nTXh" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_XGB3wPZlEd-XstlTZ6nTXi" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_LK0NgPZmEd-XstlTZ6nTXj" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_LK0NgPZmEd-XstlTZ6nTXk" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_LK0NgPZmEd-XstlTZ6nTXl" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
 </application:Application>
