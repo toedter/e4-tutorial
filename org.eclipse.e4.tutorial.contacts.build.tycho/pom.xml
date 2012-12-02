@@ -19,6 +19,7 @@
 		<module>../org.eclipse.e4.tutorial.contacts.model.simple</module>
 		<module>../org.eclipse.e4.tutorial.contacts.renderer</module>
 		<module>../org.eclipse.e4.tutorial.contacts.views.details</module>
+		<module>../org.eclipse.e4.tutorial.contacts.views.details.test</module>
 		<module>../org.eclipse.e4.tutorial.contacts.model.application</module>
 		<module>../org.eclipse.e4.tutorial.contacts.feature</module>
 	</modules>

@@ -10,3 +10,4 @@ Import-Package: org.eclipse.core.databinding.observable.list,
  org.osgi.framework;version="1.3.0"
 Bundle-ActivationPolicy: lazy
 Service-Component: OSGI-INF/contactsrepository.xml
+Export-Package: org.eclipse.e4.tutorial.contacts.model.simple

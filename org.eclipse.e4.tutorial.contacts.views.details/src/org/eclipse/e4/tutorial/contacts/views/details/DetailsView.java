@@ -17,6 +17,7 @@ import javax.inject.Named;
 
 import org.eclipse.core.databinding.DataBindingContext;
 import org.eclipse.core.databinding.beans.PojoObservables;
+import org.eclipse.core.databinding.observable.Realm;
 import org.eclipse.core.databinding.observable.value.WritableValue;
 import org.eclipse.e4.core.di.annotations.Optional;
 import org.eclipse.e4.tutorial.contacts.model.Contact;
@@ -26,13 +27,17 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
 
 public class DetailsView {
 
-	private final DataBindingContext dbc = new DataBindingContext();
-	private final WritableValue contactValue = new WritableValue();
+	private DataBindingContext dbc;
+	private WritableValue contactValue;
+	private Text firstNameText;
+	private Text lastNameText;
+	private Text emailText;
 
 	@Inject
 	public DetailsView(Composite parent) {
@@ -40,10 +45,20 @@ public class DetailsView {
 		composite
 				.setLayoutData(new GridData(SWT.FILL, SWT.CENTER, true, false));
 		composite.setLayout(new GridLayout(2, false));
+		Realm.runWithDefault(SWTObservables.getRealm(Display.getDefault()),
+				new Runnable() {
 
-		createText(composite, "First Name:", "firstName");
-		createText(composite, "Last Name:", "lastName");
-		createText(composite, "Email:", "email");
+					@Override
+					public void run() {
+						dbc = new DataBindingContext();
+						contactValue = new WritableValue();
+						firstNameText = createText(composite, "First Name:",
+								"firstName");
+						lastNameText = createText(composite, "Last Name:",
+								"lastName");
+						emailText = createText(composite, "Email:", "email");
+					}
+				});
 	}
 
 	private Text createText(final Composite parent, final String labelText,
@@ -74,6 +89,18 @@ public class DetailsView {
 		if (contact != null) {
 			contactValue.setValue(contact);
 		}
+	}
+
+	public Text getFirstNameText() {
+		return firstNameText;
+	}
+
+	public Text getLastNameText() {
+		return lastNameText;
+	}
+
+	public Text getEmailText() {
+		return emailText;
 	}
 
 }

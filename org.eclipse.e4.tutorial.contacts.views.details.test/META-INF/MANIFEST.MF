@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: e4 Tutorial Details View Test
+Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.views.details.test
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Kai Toedter
+Fragment-Host: org.eclipse.e4.tutorial.contacts.views.details;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Require-Bundle: org.junit,
+ org.eclipse.core.runtime;bundle-version="3.8.0"
+Import-Package: org.eclipse.e4.tutorial.contacts.model.simple
