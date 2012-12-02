@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.e4.tutorial.contacts.feature_1.0.0.qualifier.jar" id="org.eclipse.e4.tutorial.contacts.feature" version="1.0.0.qualifier">
+      <category name="e4-tutorial.category"/>
+   </feature>
+   <category-def name="e4-tutorial.category" label="e4 Tutorial Category">
+      <description>
+         e4 Tutorial Category
+      </description>
+   </category-def>
+</site>
