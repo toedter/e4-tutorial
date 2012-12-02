@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: e4 tutorial login
+Bundle-Name: e4 Tutorial Login
 Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.login;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Kai Toedter

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="org.eclipse.e4.tutorial.contacts.feature"
-      label="e4 tutorial feature"
+      label="e4 Tutorial Feature"
       version="1.0.0.qualifier"
       provider-name="Kai Toedter">
 

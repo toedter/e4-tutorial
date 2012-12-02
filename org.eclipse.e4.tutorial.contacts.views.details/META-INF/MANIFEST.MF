@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: e4 Contacts Tutorial Details View
+Bundle-Name: e4 Tutorial Contacts Details View
 Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.views.details;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Kai Tödter

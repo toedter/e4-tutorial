@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Simple e4 Contacs Model
+Bundle-Name: e4 Tutorial Simple Contacs Model
 Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.model.simple
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Kai Tödter

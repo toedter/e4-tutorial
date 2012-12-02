@@ -1,6 +1,6 @@
 anifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: e4 Contacts Renderer
+Bundle-Name: e4 Tutorial Renderer
 Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.renderer
 Bundle-Version: 1.0.0.qualifier
 Bundle-Vendor: Kai Tödter
