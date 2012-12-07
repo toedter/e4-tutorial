@@ -30,14 +30,16 @@ import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class DetailsView {
-
 	private DataBindingContext dbc;
 	private WritableValue contactValue;
 	private Text firstNameText;
 	private Text lastNameText;
 	private Text emailText;
+	private static Logger logger = LoggerFactory.getLogger(DetailsView.class);
 
 	@Inject
 	public DetailsView(Composite parent) {
@@ -86,6 +88,7 @@ public class DetailsView {
 	@Inject
 	public void setSelection(
 			@Optional @Named(IServiceConstants.ACTIVE_SELECTION) Contact contact) {
+		logger.debug("setSelection with: " + contact);
 		if (contact != null) {
 			contactValue.setValue(contact);
 		}

@@ -14,6 +14,8 @@
 	<modules>
 		<module>../org.eclipse.e4.tutorial.contacts</module>
 		<module>../org.eclipse.e4.tutorial.contacts.product</module>
+		<module>../org.eclipse.e4.tutorial.contacts.logging</module>
+		<module>../org.eclipse.e4.tutorial.contacts.logging.config</module>
 		<module>../org.eclipse.e4.tutorial.contacts.login</module>
 		<module>../org.eclipse.e4.tutorial.contacts.model</module>
 		<module>../org.eclipse.e4.tutorial.contacts.model.simple</module>
@@ -22,15 +24,16 @@
 		<module>../org.eclipse.e4.tutorial.contacts.views.details.test</module>
 		<module>../org.eclipse.e4.tutorial.contacts.model.application</module>
 		<module>../org.eclipse.e4.tutorial.contacts.feature</module>
+		<module>../org.eclipse.e4.tutorial.contacts.target</module>
 	</modules>
 
-	<repositories>
-		<repository>
-			<id>juno</id>
-			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/juno</url>
-		</repository>
-	</repositories>
+<!-- 	<repositories> -->
+<!-- 		<repository> -->
+<!-- 			<id>juno</id> -->
+<!-- 			<layout>p2</layout> -->
+<!-- 			<url>http://download.eclipse.org/releases/juno</url> -->
+<!-- 		</repository> -->
+<!-- 	</repositories> -->
 
 	<build>
 		<plugins>
@@ -46,6 +49,16 @@
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
+
+					<target>
+						<artifact>
+							<groupId>target</groupId>
+							<artifactId>juno-milestone</artifactId>
+							<version>1.0.0-SNAPSHOT</version>
+						</artifact>
+					</target>
+
+
 					<environments>
 						<environment>
 							<os>win32</os>

@@ -34,7 +34,7 @@ public class Login {
 
 		String cssTheme = "org.eclipse.e4.tutorial.contacts.themes.login";
 		context.set(E4Application.THEME_ID, cssTheme);
-		String cssURI = "css/login.css";
+		String cssURI = "css/login2.css";
 		context.set(E4Workbench.CSS_URI_ARG, cssURI);
 
 		PartRenderingEngine.initializeStyling(shell.getDisplay(), context);

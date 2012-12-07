@@ -71,4 +71,10 @@ public class SimpleContact implements Contact {
 	public void removePropertyChangeListener(PropertyChangeListener listener) {
 		propertyChangeSupport.removePropertyChangeListener(listener);
 	}
+
+	@Override
+	public String toString() {
+		return "SimpleContact [firstName=" + firstName + ", lastName="
+				+ lastName + ", email=" + email + "]";
+	}
 }

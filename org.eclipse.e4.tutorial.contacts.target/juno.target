@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+
+<target name="juno" sequenceNumber="5">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.equinox.executable.feature.group" version="3.6.0.v20120522-1813-7P7OG2BFLWUl7UmbVUO9iCm"/>
+<unit id="org.eclipse.sdk.ide" version="4.2.1.M20120914-1800"/>
+<repository location="http://download.eclipse.org/releases/juno"/>
+</location>
+</locations>
+</target>

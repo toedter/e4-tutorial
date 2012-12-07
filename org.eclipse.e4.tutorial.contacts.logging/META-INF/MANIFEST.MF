@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: e4 tutorial Logging
+Bundle-SymbolicName: org.eclipse.e4.tutorial.contacts.logging
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Kai Toedter
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: lib/logback-classic-1.0.7.jar,
+ lib/logback-core-1.0.7.jar,
+ lib/slf4j-api-1.7.2.jar,
+ .
+Export-Package: org.slf4j
