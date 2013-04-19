@@ -15,8 +15,8 @@ Tycho Build
 e4 Application Model Extension
 ------------------------------
 * In the project org.eclipse.e4.tutorial.contacts.model.application you find a small extension to the Eclipse 4 application model
-* This extension is used in the Application.xmi file of project org.eclipse.e4.tutorial.contacts
-* To open the Application.xmi in your running Eclipse IDE (in model editors), you have to export the project org.eclipse.e4.tutorial.contacts.model.application in to your running IDE.
+* This extension is used in the Application-with-extension.xmi file of project org.eclipse.e4.tutorial.contacts
+* To open the Application-with-extension.xmi in your running Eclipse IDE (in model editors), you have to export the project org.eclipse.e4.tutorial.contacts.model.application in to your running IDE.
 * To export, open MANIFEST.MF, in the Overview-Tab click on "Export Wizard" and then choose "Install into host. Repository:"
 * Restart your Eclipse SDK, now you should be able to open Application.e4xmi
 * If you don't want to install the model extension into your running Eclipse SDK, you could just start a new Eclipse SDK instance and make sure that the project org.eclipse.e4.tutorial.contacts.model.application is checked in the Run-Configuration.
