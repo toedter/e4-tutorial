@@ -11,4 +11,6 @@
 
   <artifactId>org.eclipse.e4.tutorial.contacts.views.details</artifactId>
   <packaging>eclipse-plugin</packaging>
-</project> 
+  
+  <groupId>org.eclipse.e4.tutorial.contacts</groupId>
+  </project> 

@@ -9,8 +9,8 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<groupId>target</groupId>
 	<artifactId>kepler</artifactId>
 	<packaging>eclipse-target-definition</packaging>
-
+	
+  	<groupId>org.eclipse.e4.tutorial.contacts</groupId>
 </project> 

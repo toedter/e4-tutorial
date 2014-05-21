@@ -12,6 +12,9 @@
 	<artifactId>org.eclipse.e4.tutorial.contacts.views.details.test</artifactId>
 	<packaging>eclipse-test-plugin</packaging>
 
+  
+  	<groupId>org.eclipse.e4.tutorial.contacts</groupId>
+  	
 <!-- 
 	<reporting>
 		<plugins>
