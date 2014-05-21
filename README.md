@@ -1,4 +1,4 @@
-e4-tutorial
+e4-tutorial [![Build Status](https://travis-ci.org/toedter/e4-tutorial.svg?branch=master)](https://travis-ci.org/toedter/e4-tutorial)
 ===========
 
 These are the reference projects for my Eclipse 4 Application Platform tutorial.
