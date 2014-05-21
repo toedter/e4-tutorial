@@ -5,3 +5,4 @@ jdk:
 before_script:
   - cd org.eclipse.e4.tutorial.contacts.build.tycho
 
+script: mvn clean install

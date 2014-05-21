@@ -9,7 +9,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>kepler</artifactId>
+	<artifactId>org.eclipse.e4.tutorial.contacts.target</artifactId>
 	<packaging>eclipse-target-definition</packaging>
 	
   	<groupId>org.eclipse.e4.tutorial.contacts</groupId>
