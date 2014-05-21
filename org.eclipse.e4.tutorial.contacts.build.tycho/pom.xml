@@ -52,8 +52,8 @@
 
 					<target>
 						<artifact>
-							<groupId>org.eclipse.e4.tutorial.contacts</groupId>
-							<artifactId>org.eclipse.e4.tutorial.contacts.target</artifactId>
+							<groupId>target</groupId>
+							<artifactId>kepler</artifactId>
 							<version>1.0.0-SNAPSHOT</version>
 						</artifact>
 					</target>
