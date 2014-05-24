@@ -37,12 +37,14 @@ import org.eclipse.swt.widgets.Text;
  */
 public class LoginDialog extends Dialog {
 
+	private Text userText;
+	private Text passwordText;
+	private String user = "";
+	private String password = "";
+
 	protected Composite loginComposite;
-
 	private final Shell shell;
-
 	private Image titleImage;
-
 	private ImageDescriptor imageDescriptor;
 
 	public LoginDialog() {
@@ -104,32 +106,35 @@ public class LoginDialog extends Dialog {
 			imageLabel.setImage(titleImage);
 		}
 		
-		Composite userPasswortComposite = new Composite(composite, SWT.NONE);
-		userPasswortComposite.setData("org.eclipse.e4.ui.css.id", "LoginDialog");
+		Composite userPasswordComposite = new Composite(composite, SWT.NONE);
+		userPasswordComposite.setData("org.eclipse.e4.ui.css.id", "LoginDialog");
 		GridLayout gridLayout2 = new GridLayout(2,false);
 		gridLayout2.marginHeight = 10;
 		gridLayout2.marginWidth = 30;
-		userPasswortComposite.setLayout(gridLayout2);
+		userPasswordComposite.setLayout(gridLayout2);
 		GridData gridData = new GridData();
 		gridData.grabExcessHorizontalSpace = true;
 		gridData.horizontalAlignment = GridData.FILL;
-		userPasswortComposite.setLayoutData(gridData);
+		userPasswordComposite.setLayoutData(gridData);
 	
-		Label userLabel = new Label(userPasswortComposite, SWT.NONE);
+		Label userLabel = new Label(userPasswordComposite, SWT.NONE);
 		userLabel.setText("User  ");
-		Text userText = new Text(userPasswortComposite, SWT.NONE);
+		userText = new Text(userPasswordComposite, SWT.NONE);
+		userText.setText(user);
 		gridData = new GridData();
 		gridData.grabExcessHorizontalSpace = true;
 		gridData.horizontalAlignment = GridData.FILL;
 		userText.setLayoutData(gridData);
 		
-		Label passwordLabel = new Label(userPasswortComposite, SWT.NONE);
+		Label passwordLabel = new Label(userPasswordComposite, SWT.NONE);
 		passwordLabel.setText("Password  ");
-		Text passwortText = new Text(userPasswortComposite, SWT.PASSWORD);
+		passwordText = new Text(userPasswordComposite, SWT.PASSWORD);
+		passwordText.setText(password);
+		
 		gridData = new GridData();
 		gridData.grabExcessHorizontalSpace = true;
 		gridData.horizontalAlignment = GridData.FILL;
-		passwortText.setLayoutData(gridData);
+		passwordText.setLayoutData(gridData);
 		
 		return composite;
 	}
@@ -149,6 +154,13 @@ public class LoginDialog extends Dialog {
 		return super.close();
 	}
 	
+	@Override
+	protected void okPressed() {
+		user = userText.getText();
+		password = passwordText.getText();
+		super.okPressed();
+	}
+
 	public ImageDescriptor imageDescriptorFromURI(URI iconPath) {
 		try {
 			return ImageDescriptor.createFromURL(new URL(iconPath.toString()));
@@ -159,4 +171,19 @@ public class LoginDialog extends Dialog {
 		}
 	}
 
+	public String getUser() {
+		return user;
+	}
+
+	public void setUser(String user) {
+		this.user = user;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
 }
