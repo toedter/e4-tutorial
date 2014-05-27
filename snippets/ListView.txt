@@ -1,0 +1,44 @@
+
+	private final TableViewer tableViewer;
+
+	@Inject
+	public ListView(Composite parent, ContactsRepository contactsRepository) {
+		// Table composite (because of TableColumnLayout)
+		final Composite tableComposite = new Composite(parent, SWT.NONE);
+		tableComposite.setLayoutData(new GridData(SWT.FILL, SWT.FILL, true,
+				true));
+		final TableColumnLayout tableColumnLayout = new TableColumnLayout();
+		tableComposite.setLayout(tableColumnLayout);
+
+		// Table viewer
+		tableViewer = new TableViewer(tableComposite, SWT.FULL_SELECTION);
+		tableViewer.getTable().setHeaderVisible(true);
+
+		// first name column
+		final TableViewerColumn firstNameColumn = new TableViewerColumn(
+				tableViewer, SWT.NONE);
+		firstNameColumn.getColumn().setText("First Name");
+		tableColumnLayout.setColumnData(firstNameColumn.getColumn(),
+				new ColumnWeightData(40));
+
+		// last name column
+		final TableViewerColumn lastNameColumn = new TableViewerColumn(
+				tableViewer, SWT.NONE);
+		lastNameColumn.getColumn().setText("Last Name");
+		tableColumnLayout.setColumnData(lastNameColumn.getColumn(),
+				new ColumnWeightData(40));
+
+		ObservableListContentProvider contentProvider = new ObservableListContentProvider();
+
+		tableViewer.setContentProvider(contentProvider);
+
+		IObservableMap[] attributes = BeansObservables.observeMaps(
+				contentProvider.getKnownElements(), Contact.class,
+				new String[] { "firstName", "lastName" });
+		tableViewer
+				.setLabelProvider(new ObservableMapLabelProvider(attributes));
+
+		tableViewer.setInput(contactsRepository.getAllContacts());
+
+		GridLayoutFactory.fillDefaults().generateLayout(parent);
+	}
