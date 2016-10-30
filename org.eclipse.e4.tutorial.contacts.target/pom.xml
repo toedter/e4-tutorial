@@ -9,7 +9,7 @@
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>kepler</artifactId>
+	<artifactId>neon</artifactId>
 	<packaging>eclipse-target-definition</packaging>
 	
   	<groupId>target</groupId>
