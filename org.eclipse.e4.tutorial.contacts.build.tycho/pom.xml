@@ -7,7 +7,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>0.20.0</tycho-version>
+		<tycho-version>0.26.0</tycho-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -49,11 +49,12 @@
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
-
+					<!-- ### file artifactId.target is expected in org.eclipse.e4.tutorial.contacts.target	 -->
+					<!-- ### file org.eclipse.e4.tutorial.contacts.target/pom.xml is expected to contain that value too	 -->
 					<target>
 						<artifact>
 							<groupId>target</groupId>
-							<artifactId>kepler</artifactId>
+							<artifactId>neon</artifactId>
 							<version>1.0.0-SNAPSHOT</version>
 						</artifact>
 					</target>
@@ -80,11 +81,13 @@
 							<ws>gtk</ws>
 							<arch>x86_64</arch>
 						</environment>
-						<environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86</arch>
-						</environment>
+						<!-- ### 32-bit macosx-builds removed since mars -->
+						<!-- ### see: https://bugs.eclipse.org/bugs/show_bug.cgi?id=441691 -->
+<!-- 						<environment> -->
+<!-- 							<os>macosx</os> -->
+<!-- 							<ws>cocoa</ws> -->
+<!-- 							<arch>x86</arch> -->
+<!-- 						</environment> -->
 						<environment>
 							<os>macosx</os>
 							<ws>cocoa</ws>
